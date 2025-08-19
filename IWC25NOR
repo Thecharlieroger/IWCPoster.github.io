@@ -21,7 +21,7 @@
             smoothThreshold="5">
             <!-- REPLACE THIS URL WITH THE LINK TO YOUR FIRST VIDEO -->
             <a-video
-                src="M1813-AT-301219_M1813_2019-12-30.mp4"
+                src="https://github.com/Thecharlieroger/IWCPoster.github.io/raw/main/M1813-AT-301219_M1813_2019-12-30.mp4"
                 width="1"
                 height="1"
                 position="0 0 0"
