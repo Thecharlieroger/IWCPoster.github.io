@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Poster AR - NORWAY</title>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
+        <!-- This NFT target is the default "pinball" image. All QR codes will use the same target. -->
+        <a-nft
+            type="nft"
+            url="https://raw.githubusercontent.com/AR-js-org/AR.js/master/data/data/pinball"
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance="0.01"
+            smoothThreshold="5">
+            <!-- REPLACE THIS URL WITH THE LINK TO YOUR FIRST VIDEO -->
+            <a-video
+                src="M1813-AT-301219_M1813_2019-12-30.mp4"
+                width="1"
+                height="1"
+                position="0 0 0"
+                rotation="-90 0 0">
+            </a-video>
+        </a-nft>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
