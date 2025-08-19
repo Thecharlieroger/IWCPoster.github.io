@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive European Flags Poster</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .instructions {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            z-index: 100;
+        }
+        a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a-scene 
+        vr-mode-ui="enabled: false"
+        embedded 
+        arjs='sourceType: webcam; debugUIEnabled: false;'>
+
+        <!-- ========== NORWAY ========== -->
+        <a-nft 
+            type="nft" 
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/targets/norway-flag"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5">
+            
+            <a-video 
+                src="https://drive.google.com/uc?export=download&id=YOUR_NORWAY_VIDEO_ID" 
+                width="1" 
+                height="0.6" 
+                position="0 0.3 0" 
+                rotation="-90 0 0"
+                visible="false">
+            </a-video>
+        </a-nft>
+
+        <!-- ========== SWEDEN ========== -->
+        <a-nft 
+            type="nft" 
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/targets/sweden-flag"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5">
+            
+            <a-video 
+                src="https://drive.google.com/uc?export=download&id=YOUR_SWEDEN_VIDEO_ID" 
+                width="1" 
+                height="0.6" 
+                position="0 0.3 0" 
+                rotation="-90 0 0"
+                visible="false">
+            </a-video>
+        </a-nft>
+
+        <!-- ========== DENMARK ========== -->
+        <a-nft 
+            type="nft" 
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/targets/denmark-flag"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5">
+            
+            <a-video 
+                src="https://drive.google.com/uc?export=download&id=YOUR_DENMARK_VIDEO_ID" 
+                width="1" 
+                height="0.6" 
+                position="0 0.3 0" 
+                rotation="-90 0 0"
+                visible="false">
+            </a-video>
+        </a-nft>
+
+        <!-- ========== GERMANY 1 ========== -->
+        <a-nft 
+            type="nft" 
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/targets/germany1-flag"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5">
+            
+            <a-video 
+                src="https://drive.google.com/uc?export=download&id=YOUR_GERMANY1_VIDEO_ID" 
+                width="1" 
+                height="0.6" 
+                position="0 0.3 0" 
+                rotation="-90 0 0"
+                visible="false">
+            </a-video>
+        </a-nft>
+
+        <!-- ========== GERMANY 2 ========== -->
+        <a-nft 
+            type="nft" 
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/targets/germany2-flag"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5">
+            
+            <a-video 
+                src="https://drive.google.com/uc?export=download&id=YOUR_GERMANY2_VIDEO_ID" 
+                width="1" 
+                height="0.6" 
+                position="0 0.3 0" 
+                rotation="-90 0 0"
+                visible="false">
+            </a-video>
+        </a-nft>
+
+        <!-- ========== ITALY ========== -->
+        <a-nft 
+            type="nft" 
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/targets/italy-flag"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5">
+            
+            <a-video 
+                src="https://drive.google.com/uc?export=download&id=YOUR_ITALY_VIDEO_ID" 
+                width="1" 
+                height="0.6" 
+                position="0 0.3 0" 
+                rotation="-90 0 0"
+                visible="false">
+            </a-video>
+        </a-nft>
+
+        <!-- Camera Entity -->
+        <a-entity camera></a-entity>
+    </a-scene>
+
+    <div class="instructions">
+        <strong>How to interact:</strong> Point your camera at any flag on the poster to see its video. | <a href="#" onclick="document.querySelector('a-scene').reload();">Reset Experience</a>
+    </div>
+</body>
+</html>
